@@ -5,16 +5,16 @@ langs <- list("All"="all", "English"="en", "French"="fr" , "German"="ge" , "Ital
 
 fluidPage(theme="bootstrap.min.css",
   # Application title
-  titlePanel("Sentiment Analysis"),
+  titlePanel("Listening the Bioscope"),
 
   sidebarLayout(
     # Sidebar with a slider and selection inputs
     sidebarPanel(
-      textInput("source1", "Search on Social Media:", value="#donaldtrump"),
+      textInput("source1", "Search on Social Media:", value="@AstraZeneca"),
 
 conditionalPanel(
   condition = "input.show_source2 == true",
-  textInput("source2", "Compare with:" , value="#hillaryclinton")
+  textInput("source2", "Compare with:" , value="@pfizer")
 ),
 checkboxInput("show_source2", "Compare"),
       actionButton("plot_feel", "Plot Sentiments"),
