@@ -16,13 +16,11 @@ n_summary <- 10
 ### This script won't work unless you replace these variables with the ones yu were provided at
 ### https://dev.twitter.com/oauth/overview
 
-consumerKey <- "i9UEomUcgZy2G7PC2uc0pwiyn"
-consumerSecret <- "gkXjbk6g7zoKxi6r0vLjSVxSdaEHssb2Elme56DCied1Gls5x3"
-acessToken <- "12345678-cOujtIII3BSAp1r0PX2xBRkdh0aZdtMMr9rkPER0s"
-accessTokenSecret <- "2cdYYqkUGuVtdWVUwBpYxIxONIUKuJwlafTirpOouY5zj"
 
-
-setup_twitter_oauth(consumerKey, consumerSecret, acessToken, accessTokenSecret)
+setup_twitter_oauth(consumer_key = "Zm7Y0XDgeot0UyK0PLt9dYmET",
+                    consumer_secret = "5rrL9q5lx7al8pzL80MnWbU4FD19ut4LutEr7PEHNoeWp06Nux", 
+                    access_token = "323128280-jRINQ0xO9xmrQHEz6r0AebZcKgta0bXEXWAwCY0m",
+                    access_secret = "7kvDgXv0ZwC89mhxDDS70LWM1CONXLg8Kmo0ykE6ns9wU")
 
 shinyServer(function(input, output, session) {
   # Define a reactive expression for the document term matrix
